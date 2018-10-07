@@ -1,26 +1,28 @@
-<!doctype html>
-<title>Welcome!</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-  ul.social {list-style-type: none;}
-</style>
+---
+layout: default
+---
+{% assign posts_count = paginator.posts | size %}
 
-<article>
-    <div>
-        <p>Hi,
-        <p> I'm Turgay Kivrak. Senior Softwate Developer/Technical Lead in Ankara. 
-        I'm currently building my github page. I'll be here soon! For now, you can find me:</p>
-         <ul class="social">
-           <li> <a href="http://turgaykivrak.wordpress.com">My blog</a> </li>
-           <li> <a href="http://www.linkedin.com/in/turgaykivrak">LinkedIn</a> </li>
-           <li> <a href="https://twitter.com/turgaykivrak">Twitter</a> </li>
-           <li> <a href="https://github.com/turgay">Github</a> </li>
-         </ul>
-        <p>Turgay</p>
+<div class="home">
+  {% if posts_count > 0 %}
+    <div class="posts">
+      {% for post in paginator.posts %}
+        <div class="post py3">
+          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+          <p class="post-summary">
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
+          </p>
+        </div>
+      {% endfor %}
     </div>
-</article>
+
+    {% include pagination.html %}
+  {% else %}
+    <h1 class='center'>{{ site.text.index.coming_soon }}</h3>
+  {% endif %}
+</div>
