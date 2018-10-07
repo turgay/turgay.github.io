@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Turgay Kivrak
+title: About
 permalink: /about/
 tags: about
 ---
 
 Hi,
 
-I'm Turgay.
+I'm Turgay Kivrak working for Aurea remotely as Java Chief Architect. 
 
 Will add more details here...
