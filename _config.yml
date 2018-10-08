@@ -1,10 +1,10 @@
 # Site settings
-title:       Turgay Kivrak | Turgay ~ Blog
+title:       Turgay Kivrak
 email:       turgaykivrak@gmail.com
 author:      Turgay Kivrak
 description: "Turgay Kivrak |  Turgay ~ Blog"
 baseurl:     ""
-url:         "https://turgay.it"
+url:         "https://turgay.github.io"
 date_format: "%-d %b, %Y"
 
 header_pages:
