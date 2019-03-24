@@ -1,4 +1,4 @@
 # turgay.github.io
 Turgay Kivrak
 
- Working on it...
+ Moved to https://www.turgaykivrak.com
