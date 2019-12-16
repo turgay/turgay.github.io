@@ -9,7 +9,7 @@ categories: personal
 
 ## Introduction to Terraform
 
-Terraform is an open-source infrastructure automation tool by HashiCorp. It has been gaining more ground to become a defacto choice for creating and managing cloud infrastructures by writing declarative definitions. By enabling "Infrastructure as Code", Terraform provides repeatability and consistency, which is very useful when setting up complicated infrastructures, such as a cluster of containers with its underlying infrastructure on AWS.
+Terraform is an open-source infrastructure automation tool by HashiCorp. It has been gaining more ground towards being a defacto choice for creating and managing cloud infrastructures by writing declarative definitions. By enabling "Infrastructure as Code", Terraform provides repeatability and consistency, which is very useful when setting up complicated infrastructures, such as a cluster of containers with its underlying infrastructure on AWS.
 
 Terraform supports [many cloud providers](https://www.terraform.io/docs/providers/index.html) for IaaS (e.g. AWS, GCP, Microsoft Azure, OpenStack, Alibaba Cloud), PaaS (e.g. Heroku), and SaaS services (e.g. Terraform Cloud, DNSimple, CloudFlare).
 
